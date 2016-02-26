@@ -4,33 +4,23 @@
 
 	var init = function() {
 		//change the bg color and text color for our list of nodes
-		types.forEach(changeColors);
+		types.forEach(RemoveEmoji);
 		//cleanup <a> tags
 		fixUpLinks();
 	};
 
-	var changeColors = function(type) {
-		var nodes = document.getElementsByTagName(type);
+    
+    var RemoveEmoji = function(type) {
+        var nodes = document.getElementsByTagName(type);
 		if(nodes) {
 			for (var i = 0; i < nodes.length; ++i) {
 				var n = nodes[i];
-				n.style.backgroundColor	="#fff";
-				n.style.background		="#fff";
-				n.style.color			="#000";
+				n.style.elem.remove(aria-level);
 			}
 		}
 	};
-
-	var fixUpLinks = function() {
-		var as = document.getElementsByTagName('a');
-		for (var i = 0; i < as.length; ++i) {
-			var a = as[i];
-			a.style.color			='#11C';
-			a.style.textDecoration	='underline';
-			a.style.textShadow		='none';
-		}
-	};
-
+        
+ 
 	return {
 		init: init
 	};

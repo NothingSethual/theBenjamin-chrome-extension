@@ -1,12 +1,12 @@
 {
-  "name": "The Benjamin",
-  "version": "1.1",
-  "description": "Chrome Extension to delight danbenjamin.  Activating the plugin will take a webpage with white text on black background and make it easier on the eyes by changing things to black text on a white background.",
+  "name": "No Facebook Emojis",
+  "version": "0.1",
+  "description": "Chrome Extension to remove Facebook's new like emojis. Based off Dan Benjamin's background color changing code.  to delight danbenjamin.  Activating the plugin will take a webpage with white text on black background and make it easier on the eyes by changing things to black text on a white background.",
   "background_page": "background.html",
   "icons": { "16": "icon16.png",
            "48": "icon48.png",
           "128": "icon128.png" },
-  "update_url": "https://github.com/marcsmith/theBenjamin-chrome-extension/raw/master/updates.xml",
+  "update_url": "https://github.com/NothingSethual/theBenjamin-chrome-extension.git",
   "permissions": [
       "tabs", "http://*/*", "https://*/*"
   ],
